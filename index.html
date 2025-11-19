@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+      <table border="1">
+          <tr>
+            <td>Home</td>
+            <td>Our Profile</td>
+            <td>Portofolio</td>
+            <td>Massage Us</td>
+          </tr>
+        </table>
+      <img src="foto.jpg.jpg" width="50" height="50" ><br>
+<hr>
+<h5>
+<h2>Hi Unknown, Welcome To Website</h2> <h6>Ini adalah website latihan pertama</h6>
+<hr>
+<h2>Our Headquarter</h2>       
+   <div class="shapes-row">
+      <div class="lingkaran"></div>
+      <div class="bulat"></div>
+      <div class="yey"></div>
+   </div>
+   <div class="shape-label">
+        <p>Jakarta</p>
+        <p>Bandung</p>
+        <p>Surabaya</p>
+    </div>
+
+<h2>Massage Us</h2>
+
+<!--main content goes here-->
+<main>
+  <!--From section-->
+    <section>
+      <form>
+        <!--Name Input-->
+         <label for="name">Name:</label>
+         <input type="text" id="name input" name="name" placeholder="Your name..">
+        <br><br>
+        <!--Tanggal Lahir Input-->
+          <label for="Tanggal Lahir">Tanggal Lahir:</label>
+          <input type="number,text" id="Tanggal Lahir input" name="Tanggal Lahir" placeholder="Your Tanggal Lahir..">
+        <br><br>
+        <!--Jenis Kelamin Input-->
+          <label>jenis kelamin</label>
+          <input type="radio" value="male" name="jenis kelamin">laki-laki
+          <input type="radio" value="female" name="jenis kelamin">perempuan
+        <br><br>
+        <!--Pesan Input-->
+          <label for="pesan">Pesan:</label><br>
+          <input type="text" id="pesan input" name="pesan" style="height:100px; width:300px;" placeholder="Tulis pesanmu disini..">
+        <br><br>
+        <!--Submit Button-->
+          <button onclick="submitForm()">Submit</button>
+      </form>
+    </section>
+
+    <script>
+      const form = document.querySelector('form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form values
+        const name = document.getElementById('name input').value;
+        const tanggalLahir = document.getElementById('Tanggal Lahir input').value;
+        const jenisKelamin = document.querySelector('input[name="jenis kelamin"]:checked') ? document.querySelector('input[name="jenis kelamin"]:checked').value : '';
+        const pesan = document.getElementById('pesan input').value;
+
+        // Display the collected data
+        alert(`Name: ${name}\nTanggal Lahir: ${tanggalLahir}\nJenis Kelamin: ${jenisKelamin}\nPesan: ${pesan}`);
+      });
+    </script>
+</main>
+</h5>
+</body>
+</html>
