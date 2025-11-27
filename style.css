@@ -1,51 +1,28 @@
-
-    img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: block;
-    object-fit: cover;
-    }
-
-    table {
-    border-collapse: collapse;
-    float: right;
+body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #ffffff;
     }
     
-
-    .lingkaran {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(134, 134, 207);
-    border-radius: 50%;
-    }
-    
-    .bulat {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(207, 134, 134);
-    border-radius: 50%;
+    .semuanya {
+        max-width: 600px;
+        margin: auto;
+        background: rgb(233, 246, 254);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .yey {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(134, 207, 134);
-    border-radius: 50%;
+    .form-section input {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
     }
 
-   .shapes-row {
-     display: flex;
-     gap: 16px;
-     align-items: center;
-     width: 100%;
-     box-sizing: border-box;
-   }
-
-    .shape-label {
-      display: flex;
-      gap: 85px;
-      justify-items: center;
-      width: 100%;
-      box-sizing: border-box;
+    script {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #ffffff;
     }
